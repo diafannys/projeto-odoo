@@ -1,1 +1,5 @@
 # projeto-odoo
+
+PROJETO DE BLOCO ANSIBLE COM ODOO
+
+
