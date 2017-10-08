@@ -1,0 +1,14 @@
+- name: My Odoo
+  hosts: odoo
+  become: yes
+  roles:
+    - ANXS.postgresql
+    - sebalix.odoo
+  vars:
+    # [postgresql]
+    - postgresql_version: 9.3
+    # [odoo]
+    - odoo_version: 8.0
+    - odoo_config_unaccent: True
+    - odoo_config_workers: 9
+

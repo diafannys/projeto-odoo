@@ -1,0 +1,8 @@
+---
+
+- name: Odoo | Handlers | Restart Odoo
+  service:
+    name: "{{ item.odoo_service | default(default_odoo_service) }}"
+    state: restarted
+  when: "{{ (item.odoo_init | default(default_odoo_init)) == True }}"
+  with_items: "{{ odoo_instances }}"

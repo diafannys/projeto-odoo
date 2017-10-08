@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  author: Andrey Shpak
+  description: Ansible role to install Odoo from a Git or Mercurial repository, and configure it. With support of several Odoo instances.
+  license: license (MIT)
+  min_ansible_version: 2.0
+
+  github_branch: master
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+
+  galaxy_tags:
+    - system
+    - web
+    - cms
+    - odoo
+    - management
+
+dependencies: []
